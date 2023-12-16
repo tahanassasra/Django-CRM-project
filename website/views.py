@@ -86,6 +86,7 @@ def add_record(request):
     else:
         form = AddRecordForm()
         return render(request, "add_record.html", {'form':form})
+    return render(request, "add_record.html", {'form':form})
   
 
 @login_required
